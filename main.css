@@ -87,6 +87,12 @@ nav a:focus {
   text-decoration: none;
 }
 
+.professional-experience-a-tag {
+  font-family: 'lato italic';
+  color: black;
+  text-decoration: none;
+}
+
 /* Settings for Mobile Screen */
 @media screen and (max-width: 760px) and (min-width:  300px) {
   /* All Section CSS starts here */
