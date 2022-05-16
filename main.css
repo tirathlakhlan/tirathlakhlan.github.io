@@ -1,0 +1,836 @@
+@font-face {
+    font-family: 'lato';
+    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: 'lato regular';
+    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'lato italic';
+    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'lato italic regular';
+    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-Italic.ttf);
+}
+
+/* Selects everything and applies settings */
+* {
+  box-sizing: border-box;
+}
+
+/* Horizontal line code */
+hr {
+  height: 1px;
+  background-color: #0924FC;
+  border-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'lato';
+  text-align: center;
+}
+
+/*  Header
+============== */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /*margin-top: 1em;
+  margin-left: 1em;*/
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+/* Navigation Menu link color change to black and text underline removed */
+nav a {
+  text-decoration: none;
+  padding: .5em;
+  color: black;
+}
+
+/* Navigation Menu color change on Hover & Focus */
+nav a:hover,
+nav a:focus {
+  color: #0924FC;
+}
+
+.text-black {
+  color: black;
+  text-decoration: none;
+}
+
+.mail {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.publications ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Settings for Mobile Screen */
+@media screen and (max-width: 760px) and (min-width:  300px) {
+  /* All Section CSS starts here */
+  .section-title {
+    font-family: 'lato regular';
+    font-size: 12px;
+    text-align: left;
+    color: #0924FC;
+  }
+  /* All Section CSS ends here */
+
+  /* Linkedin icon CSS starts here */
+  ion-icon {
+    font-size: 24px;
+    color: #0924FC;
+  }
+  /* Linkedin icon CSS ends here */
+
+  /* Hide Navigation Menu options (Resume, Blog, Contact) for mobile menu */
+  .hide {
+    display: none;
+  }
+
+  /* Display Navigation Menu sub-items as a list */
+  nav li {
+    display: list-item;
+    margin: 1em;
+  }
+
+  /* Margin of Title ("Gunjan Lakhlani") changed to 0.3em*/
+  nav li.menu-title {
+    margin: 0.3em;
+  }
+
+  /* Reversing the order of Navigation Menu */
+  nav ul {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* Customized button settings */
+  .button-accent {
+    width: auto;
+    font-size: 18px;
+    color: white;
+    background-color: #0924FC;
+    border-style: none;
+  }
+
+  /* Customized button hover settings */
+  .button-accent:hover {
+    color: white;
+    background-color: black;
+    transition: all ease-in-out 300ms;
+  }
+
+  /* Font-size of Title ("Gunjan Lakhlani") changed to 32px */
+  .menu-title {
+    font-family: 'lato italic';
+    font-size: 32px;
+  }
+
+  /* Home-About CSS starts here */
+  .home-about {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 6em;
+  }
+
+  /* Profile Image settings here */
+  .home-about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  /* Home-About CSS ends here */
+
+  /* Professional Experience CSS starts here */
+  .professional-experience {
+    font-family: 'lato regular';
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .professional-experience-subtext {
+    font-family: 'lato';
+  }
+
+  .professional-experience ul {
+    font-family: 'lato';
+    padding-left: 15px;
+  }
+
+  .professional-experience-line-break{
+    font-family: 'lato italic';
+    font-size: 16px;
+  }
+
+  .professional-experience-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Professional Experience CSS ends here */
+
+  /* Education CSS starts here */
+  .education {
+    font-family: 'lato regular';
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .education-sub {
+    font-family: 'lato italic';
+    font-size: 18px;
+  }
+
+  .education-line-break {
+    font-family: 'lato italic regular';
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .education-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Education CSS ends here */
+
+  /* Skills & Expertise CSS starts here */
+  .skills-expertise {
+    font-family: 'lato regular';
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .line-break{
+    font-family: 'lato';
+    font-size: 15px;
+  }
+
+  .line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Skills & Expertise CSS ends here */
+
+  /* Publications CSS starts here */
+  .publications {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .publications ul{
+    font-family: 'lato regular';
+    padding-left: 15px;
+  }
+
+  .publications-line-break{
+    font-family: 'lato italic';
+    font-size: 17px;
+  }
+
+  .publications-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Publications CSS ends here */
+
+  /* Academic Achievements CSS starts here */
+  .academic-achievements {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .academic-achievements-date {
+    font-family: 'lato regular';
+    font-size: 15px;
+  }
+
+  .academic-achievements-line-break {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .academic-achievements-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Academic Achievements CSS ends here */
+
+  /* Contact CSS starts here */
+  .contact {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .contact-sub {
+    font-family: 'lato regular';
+  }
+
+  .contact-sub-item {
+    font-family: 'lato';
+  }
+  /* Contact CSS ends here */
+
+  /* Footer CSS starts here */
+  .float-left {
+    font-size: 11px;
+    float: left;
+    padding-left: 10px;
+  }
+
+  .float-right {
+    font-size: 10px;
+    float: right;
+    padding-right: 10px;
+  }
+
+  footer a{
+    padding-top: 24px;
+    font-size: 20px;
+    color: #0924FC;
+    text-decoration: none;
+  }
+
+  .mail {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+  /* Footer CSS endss here */
+}
+
+
+/* Settings for Tablet Screen */
+@media screen and (max-width: 1000px) and (min-width: 761px) {
+  /* All Section CSS starts here */
+  .section-title {
+    font-family: 'lato regular';
+    font-size: 16px;
+    text-align: left;
+    color: #0924FC;
+  }
+  /* All Section CSS ends here */
+
+  /* Linkedin icon CSS starts here */
+  ion-icon {
+    font-size: 28px;
+    color: #0924FC;
+  }
+  /* Linkedin icon CSS ends here */
+
+  /* Hide Navigation Menu options (Resume, Blog, Contact) for mobile menu */
+  /*.hide {
+    display: none;
+  }*/
+
+  /* Display Navigation Menu sub-items as a list */
+  /*nav li {
+    display: list-item;
+    margin: 1em;
+  }*/
+
+  /* Margin of Title ("Gunjan Lakhlani") changed to 0.3em*/
+  /*nav li.menu-title {
+    margin: 0.3em;
+  }*/
+
+  /* Reversing the order of Navigation Menu */
+  /*nav ul {
+    display: flex;
+    flex-direction: column-reverse;
+  }*/
+
+  /* Customized button settings */
+  .button-accent {
+    width: auto;
+    font-size: 18px;
+    color: white;
+    background-color: #0924FC;
+    border-style: none;
+  }
+
+  /* Customized button hover settings */
+  .button-accent:hover {
+    color: white;
+    background-color: black;
+    transition: all ease-in-out 300ms;
+  }
+
+  /* Font-size of Title ("Gunjan Lakhlani") changed to 32px */
+  .menu-title {
+    font-family: 'lato italic';
+    font-size: 32px;
+  }
+
+  /* Home-About CSS starts here */
+  .home-about {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 7em;
+  }
+
+  /* Profile Image settings here */
+  .home-about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 50%;
+  }
+  /* Home-About CSS ends here */
+
+  /* Professional Experience CSS starts here */
+  .professional-experience {
+    font-family: 'lato regular';
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .professional-experience-subtext {
+    font-family: 'lato';
+  }
+
+  .professional-experience ul {
+    font-family: 'lato';
+    padding-left: 15px;
+  }
+
+  .professional-experience-line-break{
+    font-family: 'lato italic';
+    font-size: 16px;
+  }
+
+  .professional-experience-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Professional Experience CSS ends here */
+
+  /* Education CSS starts here */
+  .education {
+    font-family: 'lato regular';
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .education-sub {
+    font-family: 'lato italic regular';
+    font-size: 18px;
+  }
+
+  .education-line-break {
+    font-family: 'lato italic regular';
+    font-size: 17px;
+  }
+
+  .education-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Education CSS ends here */
+
+  /* Skills & Expertise CSS starts here */
+  .skills-expertise {
+    font-family: 'lato regular';
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .line-break{
+    font-family: 'lato italic';
+    font-size: 17px;
+  }
+
+  .line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Skills & Expertise CSS ends here */
+
+  /* Publications CSS starts here */
+  .publications {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .publications ul{
+    font-family: 'lato regular';
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 15px;
+  }
+
+  .publications-line-break{
+    font-family: 'lato italic';
+    font-size: 17px;
+  }
+
+  .publications-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Publications CSS ends here */
+
+  /* Academic Achievements CSS starts here */
+  .academic-achievements {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .academic-achievements-date {
+    font-family: 'lato regular';
+    float: right;
+    padding-right: 10px;
+    padding-top: 3px;
+    font-size: 18px;
+  }
+
+  /*.academic-achievements-line-break {
+    content: "\a";
+    white-space: pre;
+  }*/
+
+  /*.academic-achievements-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }*/
+  /* Academic Achievements CSS ends here */
+
+  /* Contact CSS starts here */
+  .contact {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .contact-sub {
+    font-family: 'lato regular';
+  }
+
+  .contact-sub-item {
+    font-family: 'lato';
+  }
+  /* Contact CSS ends here */
+
+  /* Footer CSS starts here */
+  .float-left {
+    font-size: 18px;
+    float: left;
+    padding-left: 10px;
+  }
+
+  .float-right {
+    font-size: 20px;
+    float: right;
+    padding-right: 10px;
+  }
+
+  footer a{
+    font-size: 30px;
+    color: #0924FC;
+    text-decoration: none;
+  }
+
+  .mail {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+  }
+  /* Footer CSS endss here */
+}
+
+
+@media screen and (max-width: 2560px) and (min-width: 1001px) {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /* All Section CSS starts here */
+  .section-title {
+    font-family: 'lato regular';
+    font-size: 18px;
+    text-align: left;
+    color: #0924FC;
+  }
+  /* All Section CSS ends here */
+
+  /* Linkedin icon CSS starts here */
+  ion-icon {
+    font-size: 28px;
+    color: #0924FC;
+  }
+  /* Linkedin icon CSS ends here */
+
+  /* Customized button settings */
+  .button-accent {
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    background-color: #0924FC;
+    border-style: none;
+  }
+
+  /* Customized button hover settings */
+  .button-accent:hover {
+    color: white;
+    background-color: black;
+    transition: all ease-in-out 300ms;
+  }
+
+  /* Font-size of Title ("Gunjan Lakhlani") changed to 32px */
+  .menu-title {
+    font-family: 'lato italic';
+    font-size: 42px;
+    float: left;
+  }
+
+  /* Home-About CSS starts here */
+  .home-about {
+    text-align: left;
+    padding-top: 9.5em;
+  }
+
+  .contact-sub {
+    font-size: 24px;
+  }
+
+  .home-about h1 {
+    font-size: 40px;
+  }
+
+  .home-text {
+    font-size: 26px;
+  }
+
+  /* Profile Image settings here */
+  .home-about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 35%;
+  }
+  /* Home-About CSS ends here */
+
+  /* Professional Experience CSS starts here */
+  .professional-experience {
+    font-family: 'lato regular';
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .professional-experience-subtext {
+    font-family: 'lato';
+    font-size: 22px;
+  }
+
+  .professional-experience ul {
+    font-family: 'lato';
+    font-size: 22px;
+    padding-left: 15px;
+  }
+
+  .professional-experience-line-break{
+    font-family: 'lato italic';
+    font-size: 22px;
+  }
+
+  .professional-experience-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .professional-experience-float-right{
+    font-family: 'lato regular';
+    font-size: 28px;
+    float: right;
+  }
+  /* Professional Experience CSS ends here */
+
+  /* Education CSS starts here */
+  .education {
+    font-family: 'lato regular';
+    font-size: 20px;
+    text-align: left;
+    /*padding-left: 10px;*/
+  }
+
+  .education-sub {
+    font-family: 'lato italic regular';
+    font-size: 20px;
+  }
+
+  .education-line-break {
+    font-family: 'lato italic regular';
+    font-size: 17px;
+  }
+
+  .education-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Education CSS ends here */
+
+  /* Skills & Expertise CSS starts here */
+  .skills-expertise {
+    font-family: 'lato regular';
+    font-size: 20px;
+    text-align: left;
+    /*padding-left: 10px;*/
+  }
+
+  .skills-expertise .line-break {
+    font-size: 18px;
+  }
+
+  .line-break{
+    font-family: 'lato italic';
+    font-size: 17px;
+  }
+
+  .line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Skills & Expertise CSS ends here */
+
+  /* Publications CSS starts here */
+  .publications {
+    text-align: left;
+    /*padding-left: 10px;*/
+  }
+
+  .publications ul{
+    font-family: 'lato regular';
+    font-size: 26px;
+    line-height: 1.5;
+    padding-left: 15px;
+  }
+
+  .publications-line-break{
+    font-family: 'lato italic';
+    font-size: 22px;
+  }
+
+  .publications-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* Publications CSS ends here */
+
+  /* Academic Achievements CSS starts here */
+  .academic-achievements {
+    font-size: 18px;
+    text-align: left;
+    /*padding-left: 10px;*/
+  }
+
+  .academic-achievements-date {
+    font-family: 'lato regular';
+    float: right;
+    padding-right: 10px;
+    padding-top: 3px;
+    font-size: 20px;
+  }
+  /* Academic Achievements CSS ends here */
+
+  /* Contact CSS starts here */
+  .contact {
+    text-align: left;
+    /*padding-left: 10px;*/
+  }
+
+  .contact-sub {
+    font-family: 'lato regular';
+    font-size: 26px;
+  }
+
+  .contact-sub-item {
+    font-family: 'lato';
+    font-size: 24px;
+  }
+  /* Contact CSS ends here */
+
+  /* Footer CSS starts here */
+  .float-left {
+    font-size: 20px;
+    float: left;
+  }
+
+  .float-right {
+    font-size: 20px;
+    float: right;
+  }
+
+  footer a{
+    font-size: 30px;
+    color: #0924FC;
+    text-decoration: none;
+  }
+  /* Footer CSS ends here */
+
+  .hide {
+    margin-top: 60px;
+    float: right;
+    font-size: 20px;
+    order: 1;
+  }
+
+  .pc-right {
+    margin-top: 50px;
+    float: right;
+    order: 2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
