@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'lato';
-    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-Light.ttf);
+    src:  url(Lato/Lato-Light.ttf);
 }
 
 @font-face {
     font-family: 'lato regular';
-    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-Regular.ttf);
+    src:  url(Lato/Lato-Regular.ttf);
 }
 
 @font-face {
     font-family: 'lato italic';
-    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-LightItalic.ttf);
+    src:  url(Lato/Lato-LightItalic.ttf);
 }
 
 @font-face {
     font-family: 'lato italic regular';
-    src:  url(/Users/tirathlakhlani/Desktop/Gunjan_Lakhlani_Portfolio/Lato/Lato-Italic.ttf);
+    src:  url(Lato/Lato-Italic.ttf);
 }
 
 /* Selects everything and applies settings */
@@ -812,25 +812,5 @@ nav a:focus {
     order: 2;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*  */
