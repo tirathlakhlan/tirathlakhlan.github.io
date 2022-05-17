@@ -169,6 +169,16 @@ nav a:focus {
     margin-right: auto;
     width: 75%;
   }
+    
+  .home-about-line-break {
+    font-family: 'lato italic';
+    font-size: 15px;
+  }
+
+  .home-about-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
   /* Home-About CSS ends here */
 
   /* Professional Experience CSS starts here */
@@ -409,6 +419,16 @@ nav a:focus {
     padding-bottom: 10px;
     width: 50%;
   }
+    
+  .home-about-line-break {
+    font-family: 'lato italic';
+    font-size: 16px;
+  }
+
+  .home-about-line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
   /* Home-About CSS ends here */
 
   /* Professional Experience CSS starts here */
@@ -645,6 +665,16 @@ nav a:focus {
     margin-right: auto;
     padding-bottom: 10px;
     width: 35%;
+  }
+    
+  .home-about-line-break {
+    font-family: 'lato italic';
+    font-size: 20px;
+  }
+
+  .home-about-line-break::before {
+    content: "\a";
+    white-space: pre;
   }
   /* Home-About CSS ends here */
 
